@@ -3,3 +3,81 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+img
+{
+    height: 250px;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar navbar"
+    "asidebar main main"
+    "footer footer footer";
+    gap: 20px;
+    grid-template-columns: 9em;
+}
+
+.navbar{
+    grid-area: navbar;
+    text-align: center;
+    background-color: #26527b;
+    color: azure;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.asidebar{
+    grid-area: asidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    padding: 2em;
+}
+
+
+ul > li{
+    list-style: none;
+    padding: 10px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    background-color: rgb(222, 222, 240);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.card a{
+    text-decoration: none;
+    background-color: #26527b;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(228, 239, 247);
+}
